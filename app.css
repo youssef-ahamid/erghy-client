@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    label {
+        @apply block flex w-full px-2
+    }
+    input {
+        @apply p-3 rounded-full w-full
+    }
+    button, button[type="button"], button[type="submit"] {
+        @apply p-4 rounded-full block font-bold capitalize max-w-fit self-end text-white ml-3
+    }
+    button[type="button"] {
+        @apply bg-gray-600
+    }
+
+    button[type="submit"] {
+        @apply bg-blue-500
+    }
+}
