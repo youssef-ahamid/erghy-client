@@ -6,8 +6,15 @@
     label {
         @apply block flex w-full px-2
     }
-    input {
-        @apply p-3 rounded-full w-full
+
+    label p {
+        @apply font-bold text-black transition duration-300 ease-out w-full pb-1
+    }
+    input, textarea {
+        @apply px-5 p-3 min-w-[150px] shadow-inner ring-2 ring-blue-600 ring-opacity-[25%] caret-blue-600 rounded-full break-all w-full outline-none transition ease-out h-12 duration-300 appearance-none hover:ring-2 hover:ring-blue-500 hover:ring-offset-4 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+    }
+    textarea {
+        @apply pb-1 
     }
     button, button[type="button"], button[type="submit"] {
         @apply p-4 rounded-full block font-bold capitalize max-w-fit self-end text-white ml-3
